@@ -105,10 +105,10 @@ canvas{display:block}
 <script>
 // ── Canvas ────────────────────────────────────────────
 const CV=document.getElementById('c'), CX=CV.getContext('2d');
-const W=480,H=640;
+const W=480,H=860;
 CV.width=W;CV.height=H;
 function resize(){
-  const s=Math.min((innerWidth-4)/W,(innerHeight-4)/H,1);
+  const s=Math.min((innerWidth-4)/W,(innerHeight-4)/H);
   CV.style.width=(W*s)+'px';CV.style.height=(H*s)+'px';
 }
 resize();window.addEventListener('resize',resize);
